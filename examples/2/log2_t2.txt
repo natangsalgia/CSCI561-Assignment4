@@ -1,0 +1,46 @@
+<Queue of Goals>#Relevant Rules/Fact#New Goal Introduced
+T # T :- V # V
+V # V :- A,L # A, L
+A # A # N/A
+L # L :- X,A # X, A
+X # X :- A,B # A, B
+A # A # N/A
+B # B :- A,Y,V # A, Y, V
+A # A # N/A
+Y # N/A # N/A
+L # L :- C # C
+C # C :- A # A
+A # A # N/A
+-------------------------------------------------------------
+V # V :- A,L # A, L
+A # A # N/A
+L # L :- X,A # X, A
+X # X :- A,B # A, B
+A # A # N/A
+B # B :- A,Y,V # A, Y, V
+A # A # N/A
+Y # N/A # N/A
+L # L :- C # C
+C # C :- A # A
+A # A # N/A
+-------------------------------------------------------------
+X # X :- A,B # A, B
+A # A # N/A
+B # B :- A,Y,V # A, Y, V
+A # A # N/A
+Y # N/A # N/A
+-------------------------------------------------------------
+B # B :- A,Y,V # A, Y, V
+A # A # N/A
+Y # N/A # N/A
+-------------------------------------------------------------
+L # L :- X,A # X, A
+X # X :- A,B # A, B
+A # A # N/A
+B # B :- A,Y,V # A, Y, V
+A # A # N/A
+Y # N/A # N/A
+L # L :- C # C
+C # C :- A # A
+A # A # N/A
+-------------------------------------------------------------

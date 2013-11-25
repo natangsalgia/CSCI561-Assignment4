@@ -1,0 +1,10 @@
+Q :- P
+P :- L,M
+M :- B,C
+L :- A,B
+C :- Q
+C :- X
+X :- Y
+D :- L,A
+A
+B

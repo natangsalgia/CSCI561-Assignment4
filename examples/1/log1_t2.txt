@@ -1,0 +1,50 @@
+<Queue of Goals>#Relevant Rules/Fact#New Goal Introduced
+L # L :- A,B # A, B
+A # A # N/A
+B # B # N/A
+-------------------------------------------------------------
+Q # Q :- P # P
+P # P :- L,M # L, M
+L # L :- A,B # A, B
+A # A # N/A
+B # B # N/A
+M # M :- B,C # B, C
+B # B # N/A
+C # C :- Q # Q
+Q # CYCLE DETECTED # N/A
+C # C :- X # X
+X # X :- Y # Y
+Y # N/A # N/A
+-------------------------------------------------------------
+D # D :- L,A # L, A
+L # L :- A,B # A, B
+A # A # N/A
+B # B # N/A
+A # A # N/A
+-------------------------------------------------------------
+P # P :- L,M # L, M
+L # L :- A,B # A, B
+A # A # N/A
+B # B # N/A
+M # M :- B,C # B, C
+B # B # N/A
+C # C :- Q # Q
+Q # Q :- P # P
+P # CYCLE DETECTED # N/A
+C # C :- X # X
+X # X :- Y # Y
+Y # N/A # N/A
+-------------------------------------------------------------
+C # C :- Q # Q
+Q # Q :- P # P
+P # P :- L,M # L, M
+L # L :- A,B # A, B
+A # A # N/A
+B # B # N/A
+M # M :- B,C # B, C
+B # B # N/A
+C # CYCLE DETECTED # N/A
+C # C :- X # X
+X # X :- Y # Y
+Y # N/A # N/A
+-------------------------------------------------------------

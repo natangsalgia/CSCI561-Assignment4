@@ -1,0 +1,9 @@
+T :- V
+V :- A,L
+A :- X,Y
+L :- X,A
+L :- C
+B :- A,Y,V
+X :- A,B
+C :- A
+A
