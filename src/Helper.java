@@ -9,7 +9,8 @@ import java.util.List;
 
 public final class Helper {
 
-    private Helper() {}
+    private Helper() {
+    }
 
     public static File strToFile(String fileStr) throws NullPointerException {
         return new File(fileStr);
@@ -61,12 +62,12 @@ public final class Helper {
         }
         return newList;
     }
-    
+
     public static <T> void addFromArray(List<T> list, Object array[]) {
-    	T[] arr = (T[]) array;
-    	for (int i = 0; i < arr.length; i++) {
-			list.add(arr[i]);
-		}
+        T[] arr = (T[]) array;
+        for (int i = 0; i < arr.length; i++) {
+            list.add(arr[i]);
+        }
     }
-    
+
 }

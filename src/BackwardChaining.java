@@ -65,4 +65,10 @@ public class BackwardChaining extends Inference {
         // TODO Auto-generated method stub
         return null;
     }
+
+    @Override
+    protected void addHeader() {
+        // TODO Auto-generated method stub
+        
+    }
 }
