@@ -47,7 +47,7 @@ public abstract class Inference {
 
     protected abstract boolean impl(String q);
 
-    protected abstract String createLog(List<String> facts, Rule r);
+/*    protected abstract String createLog(List<String> facts, Rule r);*/
 
     protected void printLog() {
         FileWriter olFr = null;

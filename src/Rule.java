@@ -47,4 +47,12 @@ public class Rule {
         return (rhs + " :- " + lString.replaceAll(",$", ""));
     }
 
+    public String printLHS() {
+        String op = "";
+        for (String string : lhs) {
+            op += string +", ";
+        }
+        return op.replaceAll(",\\s$","");
+    }
+
 }

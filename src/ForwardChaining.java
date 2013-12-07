@@ -41,7 +41,6 @@ public class ForwardChaining extends Inference {
         log += "<Known/Deducted facts>#Rules Fires#NewlyEntailedFacts" + "\n";
     }
 
-    @Override
     protected String createLog(List<String> facts, Rule r) {
         return (printList(facts) + "#" + r.toString() + " # " + r.getRhs());
     }
